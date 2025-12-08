@@ -1,6 +1,6 @@
 package com.mycompany.restaurante;
 
-import com.mycompany.restaurante.controlador.ControladorPrincipal;
+import com.mycompany.restaurante.persistencia.ControladorPrincipal;
 import com.mycompany.restaurante.vista.VentanaPrincipal;
 
 public class Restaurante {

@@ -1,6 +1,8 @@
 package com.mycompany.restaurante.persistencia;
 
-import com.mycompany.restaurante.modelo.*;
+import com.mycompany.restaurante.logico.Pedido;
+import com.mycompany.restaurante.logico.Persona;
+import com.mycompany.restaurante.logico.Alimento;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
