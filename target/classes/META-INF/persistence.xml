@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.2" xmlns="http://xmlns.jcp.org/xml/ns/persistence" 
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd">
+  
+  <persistence-unit name="FinalJPAPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    
+    <class>com.mycompany.restaurante.modelo.Persona</class>
+    <class>com.mycompany.restaurante.modelo.Empleado</class>
+    <class>com.mycompany.restaurante.modelo.Mesero</class>
+    <class>com.mycompany.restaurante.modelo.Chef</class>
+    <class>com.mycompany.restaurante.modelo.Cliente</class>
+    <class>com.mycompany.restaurante.modelo.Gerente</class>
+    
+    <class>com.mycompany.restaurante.modelo.Alimento</class>
+    <class>com.mycompany.restaurante.modelo.PlatoFuerte</class>
+    <class>com.mycompany.restaurante.modelo.Bebida</class>
+    <class>com.mycompany.restaurante.modelo.Postres</class>
+    <class>com.mycompany.restaurante.modelo.Adicionales</class>
+    
+    <class>com.mycompany.restaurante.modelo.Pedido</class>
+
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/restaurante?serverTimezone=UTC"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.password" value="littlefenix4862"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+      
+      <property name="javax.persistence.schema-generation.database.action" value="none"/>
+    </properties>
+  </persistence-unit>
+</persistence>
