@@ -19,7 +19,7 @@ public class Pedido implements Serializable {
     @JoinColumn(name = "id_mesero")
     private Mesero mesero;
 
-    @Column(name = "id_cliente")
+    @Column(name = "numero_mesa")
     private int numeroMesa;
 
     @ManyToOne

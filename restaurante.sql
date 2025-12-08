@@ -85,16 +85,19 @@ CREATE TABLE pedidos_items (
 
 USE restaurante;
 
+
 DROP TABLE IF EXISTS pedidos_detalle;
+
 CREATE TABLE pedidos_detalle (
     id INT AUTO_INCREMENT PRIMARY KEY,
     id_plato INT,
     id_bebida INT,
     id_chef INT,
     id_mesero INT,
-    id_cliente INT, 
+    numero_mesa INT,  
     total DOUBLE,
     fecha DATETIME DEFAULT CURRENT_TIMESTAMP,
+    
     FOREIGN KEY (id_plato) REFERENCES alimentos(id),
     FOREIGN KEY (id_bebida) REFERENCES alimentos(id),
     FOREIGN KEY (id_chef) REFERENCES personas(id),
