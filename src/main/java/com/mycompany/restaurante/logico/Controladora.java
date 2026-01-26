@@ -1,15 +1,10 @@
-package com.mycompany.restaurante.persistencia;
+package com.mycompany.restaurante.logico;
 
-import com.mycompany.restaurante.logico.Pedido;
-import com.mycompany.restaurante.logico.Chef;
-import com.mycompany.restaurante.logico.Persona;
-import com.mycompany.restaurante.logico.Mesero;
-import com.mycompany.restaurante.logico.Alimento;
 import com.mycompany.restaurante.persistencia.ControladorPersistencia;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Controlador {
+public class Controladora {
     
     ControladorPersistencia controlPersis = new ControladorPersistencia();
 

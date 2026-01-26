@@ -1,5 +1,6 @@
 package com.mycompany.restaurante.persistencia;
 
+import com.mycompany.restaurante.logico.Controladora;
 import com.mycompany.restaurante.logico.Pedido;
 import com.mycompany.restaurante.logico.Chef;
 import com.mycompany.restaurante.logico.Persona;
@@ -16,9 +17,9 @@ import javax.swing.table.DefaultTableModel;
 public class ControladorPedido implements ActionListener {
     
     private VistaPedido vista;
-    private Controlador control; 
+    private Controladora control; 
 
-    public ControladorPedido(VistaPedido vista, Controlador control) {
+    public ControladorPedido(VistaPedido vista, Controladora control) {
         this.vista = vista;
         this.control = control;
         

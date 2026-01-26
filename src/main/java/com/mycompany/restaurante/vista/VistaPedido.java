@@ -81,7 +81,6 @@ public class VistaPedido extends javax.swing.JFrame {
         jPanel1.add(cbMesero);
 
         tfCliente.setText("Numero de mesa");
-        tfCliente.addActionListener(this::tfClienteActionPerformed);
         jPanel1.add(tfCliente);
 
         cbPlato.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
@@ -92,7 +91,6 @@ public class VistaPedido extends javax.swing.JFrame {
 
         btnAgregar.setBackground(new java.awt.Color(46, 204, 113));
         btnAgregar.setText("CONFIRMAR PEDIDO");
-        btnAgregar.addActionListener(this::btnAgregarActionPerformed);
 
         btnEntregar.setBackground(new java.awt.Color(231, 76, 60));
         btnEntregar.setText("ENTREGAR PEDIDO (BORRAR)");
@@ -165,14 +163,6 @@ public class VistaPedido extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void btnAgregarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAgregarActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnAgregarActionPerformed
-
-    private void tfClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tfClienteActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_tfClienteActionPerformed
 
     /**
      * @param args the command line arguments

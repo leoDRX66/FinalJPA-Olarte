@@ -50,7 +50,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
         btnVerChefs.setBackground(new java.awt.Color(153, 204, 255));
         btnVerChefs.setForeground(new java.awt.Color(0, 0, 0));
         btnVerChefs.setText("2. Ver Lista de Chefs");
-        btnVerChefs.addActionListener(this::btnVerChefsActionPerformed);
 
         btnVerMozos.setBackground(new java.awt.Color(153, 204, 255));
         btnVerMozos.setForeground(new java.awt.Color(0, 0, 0));
@@ -115,10 +114,6 @@ public class VentanaPrincipal extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void btnVerChefsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVerChefsActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_btnVerChefsActionPerformed
 
     /**
      * @param args the command line arguments

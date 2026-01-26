@@ -1,5 +1,6 @@
 package com.mycompany.restaurante.persistencia;
 
+import com.mycompany.restaurante.logico.Controladora;
 import com.mycompany.restaurante.logico.Persona;
 import com.mycompany.restaurante.vista.*;
 import java.util.List;
@@ -9,12 +10,12 @@ import java.awt.event.ActionListener;
 public class ControladorPrincipal implements ActionListener {
 
     private VentanaPrincipal menu;
-    private Controlador control;
+    private Controladora control;
 
     public ControladorPrincipal(VentanaPrincipal menuRecibido) {
         this.menu = menuRecibido;
         
-        this.control = new Controlador();
+        this.control = new Controladora();
         
         this.menu.btnGestionAlimentos.addActionListener(this);
         this.menu.btnVerChefs.addActionListener(this);
@@ -27,7 +28,6 @@ public class ControladorPrincipal implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-
         if (e.getSource() == menu.btnGestionAlimentos) {
             abrirGestionAlimentos();
         } 
@@ -47,7 +47,7 @@ public class ControladorPrincipal implements ActionListener {
 
     private void abrirGestionAlimentos() {
         VistaAlimentos ventanaAlimentos = new VistaAlimentos();
-        new ControladorAlimentos(ventanaAlimentos, control);
+        new ControladorAlimentos(ventanaAlimentos, control); 
     }
 
     private void abrirGenerarPedido() {
@@ -69,7 +69,6 @@ public class ControladorPrincipal implements ActionListener {
                 ventanaLista.modelo.addRow(filaDeTabla);
             }
         }
-
         ventanaLista.setVisible(true);
     }
 }

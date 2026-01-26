@@ -12,25 +12,17 @@ public class VistaPersonal extends javax.swing.JFrame {
     public javax.swing.table.DefaultTableModel modelo;
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(VistaPersonal.class.getName());
 
-    /**
-    * Constructor por defecto (necesario para el diseñador)
-    */
+    
     public VistaPersonal() {
         this("Vista Personal");
     }
 
-    /**
-     * Constructor personalizado para recibir el título dinámico
-     */
+    
     public VistaPersonal(String tituloVentana) {
-        initComponents(); // Carga el diseño visual
+        initComponents(); 
         setLocationRelativeTo(null);
-
-        // Configurar título de la ventana y etiqueta
         setTitle(tituloVentana);
         lblTitulo.setText(tituloVentana);
-
-        // Inicializar la referencia al modelo de la tabla
         modelo = (javax.swing.table.DefaultTableModel) tabla.getModel();
     }
 
